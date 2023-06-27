@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.gumball.GameController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="nextPlayer"/>
+    <Label fx:id="text"/>
+    <!--    Lines 16 - 18 are the names of the buttons which are part of the game. This part also gives us the name,-->
+    <!--    on____ButtonClick to be able to call on that certain button.-->
+    <Button text=" TRUTH!" onAction="#onTruthButtonClick"/>
+    <Button text=" DARE!" onAction="#onDareButtonClick"/>
+    <Button text=" SKIP YOUR TURN🐔" onAction="#onSkipButtonClick"/>
+</VBox>
